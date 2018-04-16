@@ -26,4 +26,14 @@ class TestStudent < MiniTest::Test
     assert_equal(22, student.get_input_cohort())
   end
 
+  def test_talk()
+    student = Student.new("Euan", 21)
+    assert_equal(String, student.talks())
+  end
+
+  def test_favourite_langauge()
+    student = Student.new("Euan", 21)
+    assert_equal("I Love Ruby", student.fav_langauge('Ruby'))
+  end
+
 end
