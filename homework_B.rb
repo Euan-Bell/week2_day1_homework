@@ -14,6 +14,11 @@ class SportsTeam
     return @players
   end
 
+  def get_head_coach()
+    return @coach
+  end
+
+
 
 
 
